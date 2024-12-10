@@ -29,19 +29,14 @@ export const tools = [
         title: 'Keystroke Recorder',
         icon: '⌨️'
     },
-    {
-        url: 'https://react-weather-challange.netlify.app/',
-        title: 'Weather App',
-        icon: '🌤️'
-    },
-    {
+    {  
         url: 'https://color-shade-generator-ai-coded.netlify.app/',
         title: 'Color Shade Generator',
         icon: '🎨'
     },
     {
-        url: 'https://super-market-react18.netlify.app/',
-        title: 'Supermarket App',
-        icon: '🛒'
+        url: 'https://react-weather-challange.netlify.app/',
+        title: 'Weather App',
+        icon: '🌤️'
     },
 ];
