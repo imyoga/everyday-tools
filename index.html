@@ -1,25 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Tools Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Everyday Tools</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <h1>My Tools Dashboard</h1>
-            <div class="view-toggle">
-                <button id="gridView" class="active"><i class="fas fa-th-large"></i></button>
-                <button id="listView"><i class="fas fa-list"></i></button>
-            </div>
-        </header>
-        <main id="toolsContainer" class="grid-view">
-            <!-- Tools will be dynamically inserted here -->
-        </main>
+      <header>
+        <h1>Everyday Tools</h1>
+        <div class="view-toggle">
+          <button id="gridView" class="active">
+            <i class="fas fa-th-large"></i>
+          </button>
+          <button id="listView"><i class="fas fa-list"></i></button>
+        </div>
+      </header>
+      <main id="toolsContainer" class="grid-view">
+        <!-- Tools will be dynamically inserted here -->
+      </main>
+    </div>
+    <div
+      class="notes-section"
+      style="
+        margin-top: 20px;
+        padding: 15px;
+        background-color: #f8f9fa;
+        border-radius: 5px;
+        font-size: 0.9em;
+        color: #666;
+      "
+    >
+      <p>
+        <strong>Note: </strong>Our suite of image and PDF editing tools operates
+        entirely within your browser, ensuring a hassle-free experience without
+        any usage limits. Rest assured, we prioritize your privacy; no data is
+        stored on our servers. While you may encounter some upload limits
+        designed to enhance performance, these are in place to optimize your
+        editing experience. Feel free to adjust any part to better fit your
+        style or branding!
+      </p>
     </div>
     <script src="script.js" type="module"></script>
-</body>
+  </body>
 </html>
