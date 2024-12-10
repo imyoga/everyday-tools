@@ -35,7 +35,7 @@ export const tools = [
         icon: '🌤️'
     },
     {
-        url: 'https://color-shade-generator-ai-coded.net    lify.app/',
+        url: 'https://color-shade-generator-ai-coded.netlify.app/',
         title: 'Color Shade Generator',
         icon: '🎨'
     },
