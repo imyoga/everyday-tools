@@ -1,6 +1,6 @@
 # Everyday Tools
 
-Repository: https://github.com/imyoga/everyday-tools.git
+URL https://yms-tools.netlify.app/
 
 ## Description
 A collection of everyday tools and utilities to make life easier.
