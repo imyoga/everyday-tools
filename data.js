@@ -35,6 +35,11 @@ export const tools = [
         icon: '🌤️'
     },
     {
+        url: 'https://color-shade-generator-ai-coded.net    lify.app/',
+        title: 'Color Shade Generator',
+        icon: '🎨'
+    },
+    {
         url: 'https://super-market-react18.netlify.app/',
         title: 'Supermarket App',
         icon: '🛒'
