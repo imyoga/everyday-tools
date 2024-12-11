@@ -1,10 +1,20 @@
 import { tools } from './data.js';
 
+let filteredTools = [...tools];
+
+function filterTools(searchText) {
+    searchText = searchText.toLowerCase();
+    filteredTools = tools.filter(tool => 
+        tool.title.toLowerCase().includes(searchText)
+    );
+    renderTools();
+}
+
 function renderTools() {
     const container = document.getElementById('toolsContainer');
     container.innerHTML = '';
 
-    tools.forEach(tool => {
+    filteredTools.forEach(tool => {
         const card = document.createElement('a');
         card.href = tool.url;
         card.className = 'tool-card';
@@ -41,3 +51,9 @@ listViewBtn.addEventListener('click', () => {
 
 // Initial render
 renderTools();
+
+// Search functionality
+const searchInput = document.getElementById('searchInput');
+searchInput.addEventListener('input', (e) => {
+    filterTools(e.target.value);
+});

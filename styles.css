@@ -35,9 +35,41 @@ header {
     margin-bottom: 2rem;
 }
 
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 h1 {
     font-size: 2rem;
     color: var(--text-color);
+}
+
+.search-container {
+    position: relative;
+}
+
+#searchInput {
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+    font-size: 1rem;
+    width: 200px;
+    background-color: var(--card-background);
+    color: var(--text-color);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#searchInput:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 5px rgba(74, 222, 128, 0.3);
+    width: 220px;
+}
+
+#searchInput::placeholder {
+    color: #9ca3af;
 }
 
 .view-toggle button {
