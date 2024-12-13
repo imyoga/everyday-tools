@@ -39,4 +39,9 @@ export const tools = [
         title: 'Weather App',
         icon: '🌤️'
     },
+    {
+        url: 'https://image-size-reducer-coded-by-ai.netlify.app/',
+        title: 'Image Size Reducer',
+        icon: '📏'
+    }
 ];
