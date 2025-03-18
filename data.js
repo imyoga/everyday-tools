@@ -15,6 +15,11 @@ export const tools = [
         icon: '📑'
     },
     {
+        url: 'https://pdf-splitter-ai-coded.netlify.app/',
+        title: 'PDF Splitter',
+        icon: '📑✂️'
+    },
+    {
         url: 'https://image-bisector.netlify.app/',
         title: 'Image Bisector',
         icon: '✂️'
@@ -29,7 +34,7 @@ export const tools = [
         title: 'Keystroke Recorder',
         icon: '⌨️'
     },
-    {  
+    {
         url: 'https://color-shade-generator-ai-coded.netlify.app/',
         title: 'Color Shade Generator',
         icon: '🎨'
@@ -43,5 +48,5 @@ export const tools = [
         url: 'https://image-size-reducer-coded-by-ai.netlify.app/',
         title: 'Image Size Reducer',
         icon: '📏'
-    }
+    },
 ];
