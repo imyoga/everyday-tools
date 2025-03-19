@@ -5,49 +5,82 @@ let filteredTools = [...tools];
 function filterTools(searchText) {
     searchText = searchText.toLowerCase();
     filteredTools = tools.filter(tool => 
-        tool.title.toLowerCase().includes(searchText)
+        tool.title.toLowerCase().includes(searchText) || 
+        tool.type.toLowerCase().includes(searchText) ||
+        tool.description.toLowerCase().includes(searchText)
     );
     renderTools();
+}
+
+function getUniqueTypes() {
+    return [...new Set(tools.map(tool => tool.type))];
 }
 
 function renderTools() {
     const container = document.getElementById('toolsContainer');
     container.innerHTML = '';
-
-    filteredTools.forEach(tool => {
-        const card = document.createElement('a');
-        card.href = tool.url;
-        card.className = 'tool-card';
-        card.target = '_blank';
-        card.rel = 'noopener noreferrer';
-
-        card.innerHTML = `
-            <div class="thumbnail">
-                ${tool.icon}
-            </div>
-            <div class="tool-title">${tool.title}</div>
-        `;
-
-        container.appendChild(card);
+    
+    // Create table
+    const table = document.createElement('table');
+    table.className = 'tools-table';
+    
+    // Add table header
+    const thead = document.createElement('thead');
+    thead.innerHTML = `
+        <tr>
+            <th>Icon</th>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    `;
+    table.appendChild(thead);
+    
+    // Group tools by type
+    const toolsByType = {};
+    const uniqueTypes = getUniqueTypes();
+    
+    uniqueTypes.forEach(type => {
+        toolsByType[type] = filteredTools.filter(tool => tool.type === type);
     });
+    
+    // Create table body
+    const tbody = document.createElement('tbody');
+    
+    // Add rows for each type group
+    uniqueTypes.forEach(type => {
+        const toolsOfType = toolsByType[type];
+        
+        if (toolsOfType.length > 0) {
+            // Add group header row
+            const groupHeaderRow = document.createElement('tr');
+            groupHeaderRow.className = 'group-header';
+            groupHeaderRow.innerHTML = `
+                <td colspan="3">${type} (${toolsOfType.length})</td>
+            `;
+            tbody.appendChild(groupHeaderRow);
+            
+            // Add rows for each tool in this group
+            toolsOfType.forEach(tool => {
+                const row = document.createElement('tr');
+                row.className = 'tool-row';
+                row.onclick = () => window.open(tool.url, '_blank', 'noopener,noreferrer');
+                
+                row.innerHTML = `
+                    <td>
+                        <div class="tool-icon">${tool.icon}</div>
+                    </td>
+                    <td>${tool.title}</td>
+                    <td>${tool.description}</td>
+                `;
+                
+                tbody.appendChild(row);
+            });
+        }
+    });
+    
+    table.appendChild(tbody);
+    container.appendChild(table);
 }
-
-// View toggle functionality
-const gridViewBtn = document.getElementById('gridView');
-const listViewBtn = document.getElementById('listView');
-const toolsContainer = document.getElementById('toolsContainer');
-
-gridViewBtn.addEventListener('click', () => {
-    toolsContainer.className = 'grid-view';
-    gridViewBtn.classList.add('active');
-    listViewBtn.classList.remove('active');
-});
-
-listViewBtn.addEventListener('click', () => {
-    toolsContainer.className = 'list-view';
-    listViewBtn.classList.add('active');
-    gridViewBtn.classList.remove('active');
-});
 
 // Initial render
 renderTools();
