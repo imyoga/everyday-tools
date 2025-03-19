@@ -29,7 +29,8 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1.5rem;
+    padding-top: 1rem;
 }
 
 header {
@@ -38,10 +39,19 @@ header {
     align-items: center;
     margin-bottom: 1rem;
     padding: 1rem 1.5rem;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(10px);
     border-radius: 12px;
     box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+header.sticky {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.95);
 }
 
 .header-content {
@@ -62,6 +72,21 @@ h1 {
 h1:before {
     content: "🧰";
     margin-right: 0.5rem;
+}
+
+.site-title {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.site-title:hover {
+    transform: translateY(-2px);
+}
+
+.site-title h1 {
+    margin: 0;
 }
 
 .search-container {
@@ -107,11 +132,12 @@ h1:before {
 .hero-section {
     text-align: center;
     padding: 3rem 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     background: linear-gradient(120deg, rgba(45, 212, 191, 0.1), rgba(94, 234, 212, 0.15));
     border-radius: 12px;
     position: relative;
     overflow: hidden;
+    box-shadow: var(--shadow);
 }
 
 .hero-section:before {
@@ -165,21 +191,21 @@ h1:before {
 /* Table View */
 .table-view {
     width: 100%;
-    padding: 1rem;
+    padding: 0 1rem 1rem;
     display: flex;
     justify-content: center;
 }
 
 .tools-table {
-    width: 85%;
-    max-width: 900px;
+    width: 100%;
+    max-width: 1000px;
     border-collapse: separate;
     border-spacing: 0;
     background-color: var(--card-background);
     border-radius: 0.75rem;
     overflow: hidden;
     box-shadow: var(--shadow);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .tools-table thead th {
@@ -257,8 +283,8 @@ h1:before {
 /* Notes Section Styles */
 .notes-section {
     max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 2rem;
+    margin: 1.5rem auto;
+    padding: 0 1.5rem;
 }
 
 .notes-container {
@@ -269,7 +295,14 @@ h1:before {
     padding: 1.5rem 2rem;
     border-radius: 12px;
     border-left: 4px solid var(--primary-color);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transform: translateY(0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.notes-container:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    transform: translateY(-3px);
 }
 
 .notes-icon {
@@ -310,7 +343,7 @@ h1:before {
     background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
     color: #ffffff;
     padding: 2rem 0 0;
-    margin-top: 3rem;
+    margin-top: 2rem;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
 }
 
@@ -430,4 +463,68 @@ h1:before {
     .notes-icon {
         margin-bottom: 0.5rem;
     }
+}
+
+.content-container {
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.content-container h2 {
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.content-container h3 {
+    color: var(--text-color);
+    margin: 1.5rem 0 1rem;
+    font-size: 1.3rem;
+}
+
+.content-container p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #0f766e;
+}
+
+.content-container ul {
+    margin-bottom: 1.5rem;
+}
+
+.content-container li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+    color: #0f766e;
+}
+
+.breadcrumb {
+    display: flex;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.breadcrumb a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.breadcrumb span {
+    margin: 0 0.5rem;
+    color: #94a3b8;
+}
+
+.last-updated {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-top: 2rem;
+}
+
+.team-section {
+    margin-top: 2rem;
 }
