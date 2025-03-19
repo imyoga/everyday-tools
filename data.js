@@ -69,4 +69,11 @@ export const tools = [
         type: 'Image Tools',
         description: 'Compress images without losing quality'
     },
+    {
+        url: 'https://yms-fiddle.netlify.app/',
+        title: 'YM\'s Fiddle',
+        icon: '💻',
+        type: 'Development Tools',
+        description: 'Interactive JavaScript, HTML, and CSS code editor similar to JSFiddle'
+    },
 ];
