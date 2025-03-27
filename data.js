@@ -65,7 +65,7 @@ export const tools = [
   {
     url: "https://react-weather-challange.netlify.app/",
     title: "Weather App",
-    icon: "🌤️",
+    icon: "☀️",
     type: "Utility Tools",
     description: "Get real-time weather updates for any location",
   },

@@ -85,6 +85,14 @@ function renderTools() {
 // Initial render
 renderTools();
 
+// fit two emojis in the tool-icon div
+document.querySelectorAll('.tool-icon').forEach(icon => {
+    if (icon.textContent.length > 2) {
+        console.log(icon.textContent);
+        icon.style.fontSize = '1rem';
+    }
+});
+
 // Search functionality
 const searchInput = document.getElementById('searchInput');
 searchInput.addEventListener('input', (e) => {
