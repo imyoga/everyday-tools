@@ -92,4 +92,11 @@ export const tools = [
     description:
       "Combine multiple images into a single canvas with customizable layout",
   },
+  {
+    url: "https://video-to-audio-coverter.netlify.app/",
+    title: "Video to Audio Converter",
+    icon: "🎬🎵",
+    type: "Audio Tools",
+    description: "Upload a video file and extract its audio track (MP3 or WAV)",
+  },
 ];
