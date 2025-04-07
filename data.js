@@ -99,4 +99,11 @@ export const tools = [
     type: "Audio Tools",
     description: "Upload a video file and extract its audio track (MP3 or WAV)",
   },
+  {
+    url: "https://markdown-to-word-converter.netlify.app/",
+    title: "Markdown to Word Converter",
+    icon: "📄📝",
+    type: "Document Tools",
+    description: "Convert Markdown to Word documents while preserving formatting",
+  },
 ];
