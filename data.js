@@ -85,4 +85,12 @@ export const tools = [
 		description:
 			'Combine multiple images into a single canvas with customizable layout',
 	},
+	{
+		url: 'https://v0-face-photo-cropper.vercel.app/',
+		title: 'Photo ID Template',
+		icon: '🎯',
+		type: 'Image Tools',
+		description:
+			'Create standardized ID photos with precise face positioning and dimensions',
+	},
 ]
