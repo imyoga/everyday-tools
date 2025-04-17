@@ -86,7 +86,7 @@ export const tools = [
 			'Combine multiple images into a single canvas with customizable layout',
 	},
 	{
-		url: 'https://v0-face-photo-cropper.vercel.app/',
+		url: 'https://photo-id.netlify.app/',
 		title: 'Photo ID Template',
 		icon: '🎯',
 		type: 'Image Tools',
