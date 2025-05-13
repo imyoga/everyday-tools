@@ -11,18 +11,18 @@
     />
   </head>
   <body>
-    <div class="container">
-      <header>
-        <div class="header-content">
-          <a href="index.html" class="site-title">
-            <h1>Everyday Tools</h1>
-          </a>
-          <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Search tools..." />
-          </div>
+    <header class="site-header sticky">
+      <div class="header-content">
+        <a href="index.html" class="site-title">
+          <h1>Everyday Tools</h1>
+        </a>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search tools..." />
         </div>
-      </header>
-      
+      </div>
+    </header>
+    
+    <div class="container">
       <section class="hero-section">
         <div class="hero-content">
           <h2>Simple Tools for Daily Tasks</h2>
@@ -87,14 +87,22 @@
     </footer>
     <script src="script.js" type="module"></script>
     <script>
-      // Sticky header functionality
-      window.addEventListener('scroll', function() {
-        const header = document.querySelector('header');
-        if (window.scrollY > 10) {
-          header.classList.add('sticky');
-        } else {
-          header.classList.remove('sticky');
-        }
+      // Set the header as fixed immediately
+      document.addEventListener('DOMContentLoaded', function() {
+        const header = document.querySelector('.site-header');
+        
+        // Add padding to body to prevent content from hiding under the header
+        const headerHeight = header.offsetHeight;
+        document.body.style.paddingTop = headerHeight + 'px';
+        
+        // Enhance sticky behavior with scroll event
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > 10) {
+            header.classList.add('scrolled');
+          } else {
+            header.classList.remove('scrolled');
+          }
+        });
       });
     </script>
   </body>
