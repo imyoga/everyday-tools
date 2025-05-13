@@ -3,15 +3,15 @@
     --primary-color: #22d3ee;
     --secondary-color: #0ea5e9;
     --accent-color: #06b6d4;
-    --background-color: #0f172a;
-    --card-background: rgba(30, 41, 59, 0.7);
-    --card-gradient: linear-gradient(135deg, rgba(30, 41, 59, 0.7), rgba(51, 65, 85, 0.7));
+    --background-color: #0a0f1a;
+    --card-background: rgba(19, 26, 39, 0.7);
+    --card-gradient: linear-gradient(135deg, rgba(19, 26, 39, 0.8), rgba(36, 46, 63, 0.8));
     --text-color: #e2e8f0;
-    --shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    --shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     --card-border: 1px solid rgba(148, 163, 184, 0.2);
     --table-border: 1px solid rgba(148, 163, 184, 0.1);
-    --group-header-bg: rgba(30, 41, 59, 0.9);
-    --hover-row-bg: rgba(51, 65, 85, 0.7);
+    --group-header-bg: rgba(19, 26, 39, 0.9);
+    --hover-row-bg: rgba(36, 46, 63, 0.7);
     
     /* Adding new color variables */
     --white: #ffffff;
@@ -19,9 +19,9 @@
     --black: #020617;
     
     /* Background gradient colors */
-    --bg-gradient-1: #0f172a;
-    --bg-gradient-2: #1e293b;
-    --bg-gradient-3: #0f172a;
+    --bg-gradient-1: #060a14;
+    --bg-gradient-2: #121a29;
+    --bg-gradient-3: #060a14;
     
     /* Text colors */
     --text-color-secondary: #94a3b8;
@@ -40,20 +40,20 @@
     --opacity-05: 0.05;
     
     /* Shadow colors */
-    --shadow-color: rgba(0, 0, 0, 0.3);
-    --shadow-color-medium: rgba(0, 0, 0, 0.4);
-    --shadow-color-dark: rgba(0, 0, 0, 0.5);
+    --shadow-color: rgba(0, 0, 0, 0.4);
+    --shadow-color-medium: rgba(0, 0, 0, 0.5);
+    --shadow-color-dark: rgba(0, 0, 0, 0.6);
     --primary-shadow-color: rgba(34, 211, 238, 0.15);
     --primary-shadow-color-dark: rgba(34, 211, 238, 0.25);
     
     /* Background with opacity */
-    --header-bg: rgba(30, 41, 59, 0.7);
-    --header-bg-sticky: rgba(30, 41, 59, 0.85);
+    --header-bg: rgba(19, 26, 39, 0.75);
+    --header-bg-sticky: rgba(19, 26, 39, 0.9);
     --primary-bg-10: rgba(34, 211, 238, 0.1);
     --primary-bg-15: rgba(34, 211, 238, 0.15);
     --secondary-bg-15: rgba(14, 165, 233, 0.15);
     --footer-divider: rgba(148, 163, 184, 0.2);
-    --footer-bg-overlay: rgba(0, 0, 0, 0.2);
+    --footer-bg-overlay: rgba(0, 0, 0, 0.3);
 }
 
 * {
@@ -402,7 +402,7 @@ h1:before {
 
 /* Footer Styles */
 .site-footer {
-    background: linear-gradient(135deg, rgba(30, 41, 59, 0.9), rgba(15, 23, 42, 0.95));
+    background: linear-gradient(135deg, rgba(19, 26, 39, 0.9), rgba(10, 15, 26, 0.95));
     color: var(--text-color);
     padding: 2rem 0 0;
     margin-top: 2rem;
