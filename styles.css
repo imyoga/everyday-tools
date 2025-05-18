@@ -76,18 +76,19 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0.75rem 1.5rem;
+	padding: 0.6rem 1.5rem;
 	background-color: var(--header-bg);
-	border-radius: 0 0 12px 12px;
-	box-shadow: var(--shadow);
-	border-bottom: var(--card-border);
+	border-radius: 12px;
+	box-shadow: 0 4px 20px rgba(6, 182, 212, 0.25);
+	border: 1px solid var(--primary-color);
 	position: fixed;
-	top: 0;
+	top: 10px;
 	left: 0;
 	right: 0;
 	z-index: 1000;
-	width: 100%;
-	max-width: 100%;
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
 	transform: translateZ(0);
 }
 
@@ -260,14 +261,19 @@ h1:before {
 }
 
 .group-header {
-	background-color: var(--group-header-bg);
+	background-color: rgba(6, 182, 212, 0.15);
 	font-weight: 600;
 	color: var(--text-color-bright);
+	border-left: 3px solid var(--primary-color);
+	position: sticky;
+	top: 0;
+	z-index: 2;
 }
 
 .group-header td {
 	padding: 0.75rem 1rem !important;
 	font-size: 1.1rem;
+	letter-spacing: 0.5px;
 }
 
 .tool-row {
