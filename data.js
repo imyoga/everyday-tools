@@ -98,7 +98,16 @@ export const tools = [
 		title: 'Markdown to Word Converter',
 		icon: '📝',
 		type: 'Document Tools',
-		description: 'Convert Markdown to Word documents while preserving formatting',
+		description:
+			'Convert Markdown to Word documents while preserving formatting',
+	},
+	{
+		url: 'https://image-to-jpg-converter.netlify.app/',
+		title: 'Image to JPG Converter',
+		icon: '🔄',
+		type: 'Image Tools',
+		description:
+			'Convert multiple images to JPG format from PNG, WEBP, GIF, BMP and other formats',
 	},
 ]
 
@@ -122,7 +131,7 @@ export const groupedTools = {
 			title: 'PDF Splitter',
 			icon: '📑✂️',
 			description: 'Extract specific pages from PDF documents',
-		}
+		},
 	],
 	'Image Tools': [
 		{
@@ -147,14 +156,23 @@ export const groupedTools = {
 			url: 'https://image-merger-v0-coded.netlify.app/',
 			title: 'Image Merger',
 			icon: '🖼️',
-			description: 'Combine multiple images into a single canvas with customizable layout',
+			description:
+				'Combine multiple images into a single canvas with customizable layout',
 		},
 		{
 			url: 'https://photo-id.netlify.app/',
 			title: 'Photo ID Template',
 			icon: '🎯',
-			description: 'Create standardized ID photos with precise face positioning and dimensions',
-		}
+			description:
+				'Create standardized ID photos with precise face positioning and dimensions',
+		},
+		{
+			url: 'https://image-to-jpg-converter.netlify.app/',
+			title: 'Image to JPG Converter',
+			icon: '🔄',
+			description:
+				'Convert multiple images to JPG format from PNG, WEBP, GIF, BMP and other formats',
+		},
 	],
 	'Utility Tools': [
 		{
@@ -168,7 +186,7 @@ export const groupedTools = {
 			title: 'Weather App',
 			icon: '🌤️',
 			description: 'Get real-time weather updates for any location',
-		}
+		},
 	],
 	'Security Tools': [
 		{
@@ -176,7 +194,7 @@ export const groupedTools = {
 			title: 'Password Generator',
 			icon: '🔒',
 			description: 'Create strong, secure passwords instantly',
-		}
+		},
 	],
 	'Design Tools': [
 		{
@@ -184,54 +202,56 @@ export const groupedTools = {
 			title: 'Color Shade Generator',
 			icon: '🎨',
 			description: 'Create custom color palettes and gradients',
-		}
+		},
 	],
 	'Development Tools': [
 		{
 			url: 'https://yms-fiddle.netlify.app/',
 			title: "YM's Fiddle",
 			icon: '💻',
-			description: 'Interactive JavaScript, HTML, and CSS code editor similar to JSFiddle',
-		}
+			description:
+				'Interactive JavaScript, HTML, and CSS code editor similar to JSFiddle',
+		},
 	],
 	'Document Tools': [
 		{
 			url: 'https://markdown-to-word-converter.netlify.app/',
 			title: 'Markdown to Word Converter',
 			icon: '📝',
-			description: 'Convert Markdown to Word documents while preserving formatting',
-		}
-	]
-};
+			description:
+				'Convert Markdown to Word documents while preserving formatting',
+		},
+	],
+}
 
 // Array of tool categories with their tools
 export const toolCategories = [
 	{
 		name: 'PDF Tools',
-		tools: groupedTools['PDF Tools']
+		tools: groupedTools['PDF Tools'],
 	},
 	{
 		name: 'Image Tools',
-		tools: groupedTools['Image Tools']
+		tools: groupedTools['Image Tools'],
 	},
 	{
 		name: 'Utility Tools',
-		tools: groupedTools['Utility Tools']
+		tools: groupedTools['Utility Tools'],
 	},
 	{
 		name: 'Security Tools',
-		tools: groupedTools['Security Tools']
+		tools: groupedTools['Security Tools'],
 	},
 	{
 		name: 'Design Tools',
-		tools: groupedTools['Design Tools']
+		tools: groupedTools['Design Tools'],
 	},
 	{
 		name: 'Development Tools',
-		tools: groupedTools['Development Tools']
+		tools: groupedTools['Development Tools'],
 	},
 	{
 		name: 'Document Tools',
-		tools: groupedTools['Document Tools']
-	}
-];
+		tools: groupedTools['Document Tools'],
+	},
+]
