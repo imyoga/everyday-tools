@@ -3,119 +3,106 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Everyday Tools</title>
-		<link rel="stylesheet" href="styles.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		<meta
+			http-equiv="refresh"
+			content="0;url=https://ym-apps.live/everyday-tools/"
 		/>
+		<link rel="canonical" href="https://ym-apps.live/everyday-tools/" />
+		<title>Everyday Tools - Moved Permanently</title>
+		<style>
+			body {
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+					Oxygen, Ubuntu, Cantarell, sans-serif;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: 100vh;
+				margin: 0;
+				background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+				color: white;
+				text-align: center;
+				line-height: 1.6;
+			}
+			.container {
+				max-width: 600px;
+				padding: 2rem;
+				background: rgba(255, 255, 255, 0.1);
+				border-radius: 20px;
+				backdrop-filter: blur(10px);
+				box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+				border: 1px solid rgba(255, 255, 255, 0.2);
+			}
+			h1 {
+				font-size: 2.5rem;
+				margin-bottom: 1rem;
+				font-weight: 300;
+			}
+			p {
+				font-size: 1.1rem;
+				margin-bottom: 2rem;
+				opacity: 0.9;
+			}
+			.redirect-link {
+				display: inline-block;
+				padding: 15px 30px;
+				background: rgba(255, 255, 255, 0.2);
+				color: white;
+				text-decoration: none;
+				border-radius: 50px;
+				transition: all 0.3s ease;
+				font-weight: 500;
+				font-size: 1.1rem;
+				border: 2px solid rgba(255, 255, 255, 0.3);
+			}
+			.redirect-link:hover {
+				background: rgba(255, 255, 255, 0.3);
+				transform: translateY(-2px);
+				box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+			}
+			.countdown {
+				font-size: 0.9rem;
+				opacity: 0.8;
+				margin-top: 1rem;
+			}
+			.icon {
+				font-size: 3rem;
+				margin-bottom: 1rem;
+			}
+		</style>
 	</head>
 	<body>
-		<header class="site-header sticky">
-			<div class="header-content">
-				<a href="index.html" class="site-title">
-					<h1>Everyday Tools</h1>
-				</a>
-				<div class="search-container">
-					<input type="text" id="searchInput" placeholder="Search tools..." />
-				</div>
-			</div>
-		</header>
-
 		<div class="container">
-			<section class="hero-section">
-				<div class="hero-content">
-					<h2>Simple Tools for Daily Tasks</h2>
-					<p>
-						A collection of useful web utilities designed to make your digital
-						life easier. All tools run directly in your browser — no downloads,
-						no signups.
-					</p>
-					<a href="#toolsContainer" class="cta-button">Explore Tools</a>
-				</div>
-			</section>
-
-			<section class="categories-section">
-				<div class="categories-container" id="categoriesNav">
-					<!-- Categories will be dynamically inserted here -->
-				</div>
-			</section>
-
-			<main id="toolsContainer" class="table-view">
-				<!-- Tools will be dynamically inserted here -->
-			</main>
-
-			<div class="notes-section">
-				<div class="notes-container">
-					<div class="notes-icon">
-						<i class="fas fa-shield-alt"></i>
-					</div>
-					<div class="notes-content">
-						<h3>Privacy & Performance</h3>
-						<p>
-							Our suite of image and PDF editing tools operates entirely within
-							your browser, ensuring a hassle-free experience without any usage
-							limits. Rest assured, we prioritize your privacy;
-							<strong>no data is stored on our servers</strong>. While you may
-							encounter some upload limits designed to enhance performance,
-							these are in place to optimize your editing experience.
-						</p>
-					</div>
-				</div>
+			<div class="icon">🔧</div>
+			<h1>Everyday Tools</h1>
+			<p>
+				This site has permanently moved to a new location. You will be
+				automatically redirected in <span id="countdown">3</span> seconds.
+			</p>
+			<a href="https://ym-apps.live/everyday-tools/" class="redirect-link"
+				>Go to New Site</a
+			>
+			<div class="countdown">
+				If you are not redirected automatically, please click the link above.
 			</div>
 		</div>
 
-		<footer class="site-footer">
-			<div class="footer-content">
-				<div class="footer-logo">
-					<h3>Everyday Tools</h3>
-					<p>Useful web tools for everyday tasks</p>
-				</div>
-				<div class="footer-links">
-					<div class="link-column">
-						<h4>Resources</h4>
-						<ul>
-							<li><a href="about.html">About</a></li>
-							<li><a href="privacy-policy.html">Privacy Policy</a></li>
-							<li><a href="terms-of-use.html">Terms of Use</a></li>
-						</ul>
-					</div>
-					<div class="link-column">
-						<h4>Connect</h4>
-						<ul>
-							<li>
-								<a href="https://github.com/imyoga" target="_blank"
-									><i class="fab fa-github"></i> GitHub</a
-								>
-							</li>
-							<li>
-								<a href="#"><i class="fab fa-twitter"></i> Twitter</a>
-							</li>
-							<li>
-								<a
-									href="https://www.linkedin.com/in/yogeshmoradiya/"
-									target="_blank"
-									><i class="fab fa-linkedin"></i> LinkedIn</a
-								>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="footer-bottom">
-				<p>&copy; 2023 Everyday Tools. All rights reserved.</p>
-			</div>
-		</footer>
-		<script src="script.js" type="module"></script>
 		<script>
-			// Set the header as fixed
-			document.addEventListener('DOMContentLoaded', function () {
-				const header = document.querySelector('.site-header')
+			// Countdown timer
+			let count = 3
+			const countdownElement = document.getElementById('countdown')
 
-				// Add padding to body to prevent content from hiding under the header
-				const headerHeight = header.offsetHeight
-				document.body.style.paddingTop = headerHeight + 20 + 'px'
-			})
+			const timer = setInterval(() => {
+				count--
+				countdownElement.textContent = count
+
+				if (count <= 0) {
+					clearInterval(timer)
+					window.location.href = 'https://ym-apps.live/everyday-tools/'
+				}
+			}, 1000)
+
+			// Immediate redirect for search engines and browsers that support it
+			window.location.replace('https://ym-apps.live/everyday-tools/')
 		</script>
 	</body>
 </html>
