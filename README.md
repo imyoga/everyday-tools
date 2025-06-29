@@ -30,7 +30,7 @@ The new `index.html` implements:
 
 ## Access the Live Site
 
-👉 **Visit the new site**: [https://ym-apps.live/everyday-tools/](https://ym-apps.live/everyday-tools/)
+👉 **Visit the new site**: [https://ym-apps.live/](https://ym-apps.live/)
 
 ---
 
