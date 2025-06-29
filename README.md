@@ -2,7 +2,7 @@
 
 This repository has been archived. The Everyday Tools website has permanently moved to:
 
-**🔗 New URL: [https://ym-apps.live/everyday-tools/](https://ym-apps.live/everyday-tools/)**
+**🔗 New URL: [https://ym-apps.live/](https://ym-apps.live/)**
 
 ## What happened?
 
